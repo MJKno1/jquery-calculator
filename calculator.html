@@ -24,34 +24,36 @@
 			<h5>Electronic Calculator</h5>
 		</div>
 		<div id="screen">
-			<span id="steps">0</span>
+			<span id="calculation">0</span>
+			<span id="total">0</span>
 		</div>
 		<div class="text-center" id="buttons">
-			<button class="red" id="deleteAll">AC </button>
-			<button class="red" id="deleteOne">CE </button>
-			<button id="/">&divide; </button>
-			<button id="*">X </button>
+			<button class="red clear" data-clear="deleteAll">C </button>
+			<button class="red clear" data-clear="deleteOne">&#9003; </button>
+			<button class="ops" data-ops="/">&divide; </button>
+			<button class="ops" data-ops="*">X </button>
 			<br/>
-			<button id="7">7 </button>
-			<button id="8">8 </button>
-			<button id="9">9 </button>
-			<button id="-">- </button>
+			<button class="nums" data-nums="7">7 </button>
+			<button class="nums" data-nums="8">8 </button>
+			<button class="nums" data-nums="9">9 </button>
+			<button class="ops" data-ops="-">- </button>
 			<br/>
-			<button id="4">4 </button>
-			<button id="5">5 </button>
-			<button id="6">6 </button>
-			<button id="+">+ </button>
+			<button class="nums" data-nums="4">4 </button>
+			<button class="nums" data-nums="5">5 </button>
+			<button class="nums" data-nums="6">6 </button>
+			<button class="ops" data-ops="+">+ </button>
 			<br/>
-			<button id="1">1 </button>
-			<button id="2">2 </button>
-			<button id="3">3 </button>
-			<button id=".">. </button>
+			<button class="nums" data-nums="1">1 </button>
+			<button class="nums" data-nums="2">2 </button>
+			<button class="nums" data-nums="3">3 </button>
+			<button id="dot">. </button>
 			<br/>
-			<button id="0">0 </button>
-			<button id="total">= </button>
+			<button class="nums" id="zero" data-nums="0">0 </button>
+			<button id="equals">= </button>
 		</div>
 
 	</div>
+
 	<script type="text/javascript" src="calculator.js"></script>
 
 </body>
